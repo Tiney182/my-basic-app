@@ -1,3 +1,6 @@
 p {
     color: chartreuse;
+    padding: 20px;
+    background-color: rgb(239, 255, 228);
+    border: 1px solid rgb(3, 255, 45);
 }
