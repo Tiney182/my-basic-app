@@ -15,12 +15,14 @@
 <app-server></app-server>
 <hr>
 
+<label>Username</label>
+
 <input type = "text" 
     class="form-control" 
     [(ngModel)] = "userName">
 
 <button class="btn btn-primary" 
-[disabled] ="userName == ''"
+[disabled] ="userName === ''"
 (click)="onCreateUserName()">Add User</button>
 <p [innerText]= "userNameStatus"> </p>
 
