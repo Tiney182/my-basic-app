@@ -11,5 +11,5 @@
 <!-- <p [innerText]= "allowNewServer"> </p> -->
 <!-- <p>{{serverCreationStatus}}</p> -->
 <p *ngIf="detailsCreated">Details created for details {{secretPassword}}</p>
-<app-detail *ngFor="let detail of details"
-[ngStyle]="{backgroundColor: getColor()}"></app-detail>
+<app-detail *ngFor="let detail of details; let i = index"
+[ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"></app-detail>
